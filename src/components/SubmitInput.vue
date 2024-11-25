@@ -9,7 +9,7 @@ const props= defineProps({
 
 <template>
   <input type="submit" name="name"
-  :value="modelValue" @input="(event) => {
+  :value="modelValue" @click="(event) => {
     console.log(event.target);
     $emit('update:modelValue', event.target.value)}"/>
 </template>

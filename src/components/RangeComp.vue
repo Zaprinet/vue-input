@@ -8,7 +8,6 @@ const props = defineProps({
 
 <template>
   <input type="range" :value="modelValue" @input="(event) => {
-    console.log(event.target)
     $emit('update:modelValue', event.target.value)}"
   >
 </template>

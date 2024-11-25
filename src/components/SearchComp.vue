@@ -12,6 +12,9 @@ import PasswordComp from './PasswordComp.vue';
 import RangeComp from './RangeComp.vue';
 import ImageInput from './ImageInput.vue';
 import SubmitInput from './SubmitInput.vue';
+import TimeInput from './TimeInput.vue';
+import WeekInput from './WeekInput.vue';
+import UrlInput from './UrlInput.vue';
 
 
 const newModel = ref('Prince')
@@ -26,9 +29,10 @@ const newPassword = ref('Test@101')
 const newRange = ref('')
 const newImage = ref('')
 const newSubmit = ref('Submit')
-
+const newWeek = ref('Week 44, 2024')
 const input = ref('radio')
-const newInput = ref('date')
+const newTime = ref('00:01')
+const newUrl = ref('www.abaaly.com')
 
 </script>
 
@@ -64,13 +68,26 @@ const newInput = ref('date')
 
   <RangeComp v-model="newRange" />
   {{ newRange }}
-  <hr>
+  <br>
 
   <ImageInput v-model="newImage"/>
   {{ newImage }}
+  <br>
 
   <SubmitInput v-model="newSubmit" />
   {{ newSubmit }}
+  <br>
+
+  <TimeInput v-model="newTime"/>
+  {{ newTime }}
+  <br>
+
+  <WeekInput v-model="newWeek"/>
+  {{ newWeek }}
+  <br>
+
+  <UrlInput v-model="newUrl" />
+  {{ newUrl }}
 </template>
 
 <style lang="css" scoped>
