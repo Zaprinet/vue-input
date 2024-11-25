@@ -15,6 +15,7 @@ import SubmitInput from './SubmitInput.vue';
 import TimeInput from './TimeInput.vue';
 import WeekInput from './WeekInput.vue';
 import UrlInput from './UrlInput.vue';
+import DateTime from './DateTime.vue';
 
 
 const newModel = ref('Prince')
@@ -33,6 +34,7 @@ const newWeek = ref('Week 44, 2024')
 const input = ref('radio')
 const newTime = ref('00:01')
 const newUrl = ref('www.abaaly.com')
+const newDatetime = ref('21-06-2023, 02:35')
 
 </script>
 
@@ -88,6 +90,10 @@ const newUrl = ref('www.abaaly.com')
 
   <UrlInput v-model="newUrl" />
   {{ newUrl }}
+  <br>
+
+  <DateTime v-model="newDatetime"/>
+  {{ newDatetime }}
 </template>
 
 <style lang="css" scoped>
