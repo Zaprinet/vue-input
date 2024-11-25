@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({
   modelValue: {
-    type: Number,
+    type: String,
   }
 })
 </script>

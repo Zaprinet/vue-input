@@ -10,6 +10,8 @@ import FileInput from './FileInput.vue';
 import RadioInput from './RadioInput.vue';
 import PasswordComp from './PasswordComp.vue';
 import RangeComp from './RangeComp.vue';
+import ImageInput from './ImageInput.vue';
+import SubmitInput from './SubmitInput.vue';
 
 
 const newModel = ref('Prince')
@@ -22,6 +24,8 @@ const newFile = ref(null )
 const newValue = ref(false)
 const newPassword = ref('Test@101')
 const newRange = ref('')
+const newImage = ref('')
+const newSubmit = ref('Submit')
 
 const input = ref('radio')
 const newInput = ref('date')
@@ -60,6 +64,13 @@ const newInput = ref('date')
 
   <RangeComp v-model="newRange" />
   {{ newRange }}
+  <hr>
+
+  <ImageInput v-model="newImage"/>
+  {{ newImage }}
+
+  <SubmitInput v-model="newSubmit" />
+  {{ newSubmit }}
 </template>
 
 <style lang="css" scoped>
